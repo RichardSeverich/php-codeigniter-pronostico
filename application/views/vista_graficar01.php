@@ -17,40 +17,40 @@ $dinero[12] = $factor_diciembre;
 <html xmlns="">
 
 <head>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<script type="text/javascript">
-		google.load("visualization", "1", {
-			packages: ["corechart"]
-		});
-		google.setOnLoadCallback(drawChart);
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", {
+      packages: ["corechart"]
+    });
+    google.setOnLoadCallback(drawChart);
 
-		function drawChart() {
-			var data = google.visualization.arrayToDataTable([
-				['Mes', 'VENTAS'],
-				<?php
-				for ($x = 1; $x <= 12; $x = $x + 1) {
-				?>['<?php echo $meses[$x]; ?>', <?php echo $dinero[$x] ?>],
-				<?php } ?>
-			]);
-			var options = {
-				title: 'VENTAS REALES',
-				hAxis: {
-					title: 'Grafica de las ventas reales',
-					titleTextStyle: {
-						color: 'red'
-					}
-				}
-			};
-			var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-			chart.draw(data, options);
-		}
-		//
-	</script>
-	<title> </title>
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Mes', 'VENTAS'],
+        <?php
+        for ($x = 1; $x <= 12; $x = $x + 1) {
+        ?>['<?php echo $meses[$x]; ?>', <?php echo $dinero[$x] ?>],
+        <?php } ?>
+      ]);
+      var options = {
+        title: 'VENTAS REALES',
+        hAxis: {
+          title: 'Grafica de las ventas reales',
+          titleTextStyle: {
+            color: 'red'
+          }
+        }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+    //
+  </script>
+  <title> </title>
 </head>
 
 <body>
-	<div id="chart_div" style="width: 98%; height: 500px;"></div>
+  <div id="chart_div" style="width: 98%; height: 500px;"></div>
 </body>
 
 </html>
