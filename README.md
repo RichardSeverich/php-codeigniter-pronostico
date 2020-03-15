@@ -1,6 +1,5 @@
-# Colegio - Facturacion
+# Productos Ventas - Reportes
 PRONOSTICOS
-
 
 ## Prerequisites
 
