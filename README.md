@@ -12,7 +12,6 @@ PRONOSTICOS
 1. Copy the project to: C:\xampp\htdocs"
 2. Import the Data bases.
 
-
 ## Configuration - Data Bases
 1. Enter to PhpMyAdmin
 2. Create data bases: CREATE DATABASE pronostico;
@@ -20,6 +19,10 @@ PRONOSTICOS
 4. Select the file: docs_backup_db/pronostico.sql and press go button.
 5. Configure data base credentials in: application/config/database.php
 6. Enter to: http://localhost/php-codeigniter-pronostico/
+Credentials:
+    User: 5928001 Pass: 5928001  Type: Admin.
+    User: 5928001 Pass: 5928001  Type: Vendedor.
+    User: 5928001 Pass: 5928001  Type: Productor.
 
 ## Contributing
 
@@ -40,6 +43,3 @@ Richard Severich.
 * You may not disclose such Confidential Information, and may only
 * use such Confidential Information in accordance with the terms of
 * the license agreement you entered into with Richard Severich.
-
-
-
